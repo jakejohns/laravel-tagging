@@ -33,7 +33,7 @@ class TaggingServiceProvider extends ServiceProvider {
 	 */
 	public function register() 
 	{
-		$this->app->singleton(TaggingUtility::class, function () {
+		$this->app->singleton('Conner\Tagging\Contracts\TaggingUtility', function () {
 			return new Util;
 		});
 	}
@@ -44,7 +44,7 @@ class TaggingServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return [TaggingUtility::class];
+		return ['Conner\Tagging\Contracts\TaggingUtility'];
 	}
 	
 	/**

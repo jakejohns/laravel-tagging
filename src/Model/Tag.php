@@ -25,7 +25,7 @@ class Tag extends Eloquent
 			$this->connection = $connection;
 		}
 		
-		$this->taggingUtility = app(TaggingUtility::class);
+		$this->taggingUtility = app('Conner\Tagging\Contracts\TaggingUtility');
 	}
 	
 	/**

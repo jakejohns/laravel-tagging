@@ -17,7 +17,7 @@ class Tagged extends Eloquent
 	{
 		parent::__construct($attributes);
 		
-		$this->taggingUtility = app(TaggingUtility::class);
+		$this->taggingUtility = app('Conner\Tagging\Contracts\TaggingUtility');
 	}
 	
 	/**

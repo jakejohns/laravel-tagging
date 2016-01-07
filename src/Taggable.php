@@ -50,7 +50,7 @@ trait Taggable
             $model->autoTagPostSave();
         });
 
-		static::$taggingUtility = app(TaggingUtility::class);
+        static::$taggingUtility = app('Conner\Tagging\Contracts\TaggingUtility');
 	}
 	
 	/**
